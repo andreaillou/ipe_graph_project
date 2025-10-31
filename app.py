@@ -5,7 +5,7 @@ from plotly.subplots import make_subplots
 
 # Page configuration
 st.set_page_config(
-    page_title="Economic Indicators Dashboard",
+    page_title="Cyprus Economic Indicators | International Political Economy",
     page_icon="📊",
     layout="wide"
 )
