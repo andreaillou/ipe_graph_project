@@ -110,7 +110,7 @@ fig_gdp.update_layout(
 )
 
 fig_gdp.update_xaxes(
-    title_text="Year"
+    title_text="Year",
     showgrid=True,
     gridwidth=1,
     gridcolor='LightGray'
