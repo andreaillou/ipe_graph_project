@@ -104,14 +104,23 @@ fig_gdp.add_trace(
 
 fig_gdp.update_layout(
     height=400,
-    xaxis_title="Year",
-    yaxis_title="GDP per Capita ($)",
     plot_bgcolor='white',
-    showgrid=True,
     hovermode='x',
-    xaxis=dict(showgrid=True, gridwidth=1, gridcolor='LightGray'),
-    yaxis=dict(showgrid=True, gridwidth=1, gridcolor='LightGray'),
     font=dict(family="Arial, sans-serif", size=12)
+)
+
+fig_gdp.update_xaxes(
+    title_text="Year",
+    showgrid=True,
+    gridwidth=1,
+    gridcolor='LightGray'
+)
+
+fig_gdp.update_yaxes(
+    title_text="GDP per Capita ($)",
+    showgrid=True,
+    gridwidth=1,
+    gridcolor='LightGray'
 )
 
 st.plotly_chart(fig_gdp, use_container_width=True)
@@ -136,14 +145,23 @@ fig_inflation.add_hline(y=0, line_dash="dash", line_color="gray", opacity=0.5)
 
 fig_inflation.update_layout(
     height=400,
-    xaxis_title="Year",
-    yaxis_title="Inflation Rate (%)",
     plot_bgcolor='white',
-    showgrid=True,
     hovermode='x',
-    xaxis=dict(showgrid=True, gridwidth=1, gridcolor='LightGray'),
-    yaxis=dict(showgrid=True, gridwidth=1, gridcolor='LightGray'),
     font=dict(family="Arial, sans-serif", size=12)
+)
+
+fig_inflation.update_xaxes(
+    title_text="Year",
+    showgrid=True,
+    gridwidth=1,
+    gridcolor='LightGray'
+)
+
+fig_inflation.update_yaxes(
+    title_text="Inflation Rate (%)",
+    showgrid=True,
+    gridwidth=1,
+    gridcolor='LightGray'
 )
 
 st.plotly_chart(fig_inflation, use_container_width=True)
